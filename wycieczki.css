@@ -9,6 +9,7 @@ body
 
 *{ box-sizing: border-box; }
 
+/*pojemnik */
 .container
 {
 	display: flex;
@@ -16,32 +17,7 @@ body
 	width: 100%;
 }
 
-.nav
-{
-	position: fixed;
-	z-index: 100;
-	display: none;
-	flex-flow: row nowrap;
-	width: 100%;
-	height: 50px;
-	background-color: #000000;
-	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.menu
-{
-	width: 50px;
-	height: 50px;
-	text-align: center;
-	line-height: 320%;
-	position: relative;
-}
-
-.menu:hover
-{
-	background-color: #dedede;
-}
-
+/*nawigacja strony*/
 nav
 {
 	position: fixed;
@@ -54,7 +30,36 @@ nav
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.dom
+/*przycisk szukaj*/
+.search
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	z-index: 1;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.search:hover
+{
+	background-color: #f44336;
+}
+
+a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{ color: #000; display: block;}
+
+/*strona główna*/
+.home
 {
 	display: flex;
 	justify-content: center;
@@ -67,12 +72,13 @@ nav
 	transition: all .2s ease-in-out;
 }
 
-.dom:hover
+.home:hover
 {
 	color: #000;
 	background-color: #dedede;
 }
 
+/*organizatorzy*/
 .zsp
 {
 	display: flex;
@@ -92,6 +98,7 @@ nav
 	background-color: #dedede;
 }
 
+/*wycieczka*/
 .wyc
 {
 	display: flex;
@@ -111,6 +118,7 @@ nav
 	background-color: #dedede;
 }
 
+/*kontakty*/
 .kon
 {
 	display: flex;
@@ -130,6 +138,7 @@ nav
 	background-color: #dedede;
 }
 
+/*więcej*/
 .wie
 {
 	display: block;
@@ -150,6 +159,13 @@ nav
 	background-color: #dedede;
 }
 
+.wie:hover ul
+{
+	display: block;
+}
+
+
+/*zawartość więcej*/
 ul
 {
 	position: relative;
@@ -161,19 +177,6 @@ ul
 	width: 220px;
 	padding: 0;
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-a
-{
-	text-decoration: none;
-	color: #fff;
-}
-
-a:hover{ color: #000; display: block;}
-
-.wie:hover ul
-{
-	display: block;
 }
 
 ul > li
@@ -195,40 +198,60 @@ ul > li:hover
 	color: #fff;
 }
 
-.search
+/*nawigacja strony*/
+.nav
 {
-	display: flex;
+	position: fixed;
+	z-index: 100;
+	display: none;
 	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #000000;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+/*ikona do rozwijania menu poniżej 800px*/
+.menu
+{
 	width: 50px;
 	height: 50px;
-	position: absolute;
-	right: 0px;
-	cursor: pointer;
-	transition: all .2s ease-in-out;
+	text-align: center;
+	line-height: 320%;
+	position: relative;
 }
 
-.search:hover
+.menu:hover
 {
-	background-color: #f44336;
+	background-color: #dedede;
 }
 
+/*główne zdjęcie*/
+.mainImage
+{
+	width: 100%;
+	height: 57em;
+}
+
+/*pojemnik zwiazany z organizacją*/
 .org
 {
 	width: 100%;
 	min-height: 690px;
+	margin-bottom: -10px;
 }
 
+/*napis "ORGANIZATORZY"*/
 h2
 {
 	font-size: 32px;
 	font-weight: 300;
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 50px;
 	letter-spacing: 2px;
 }
 
+/*napis "Uwielbiamy miejsca, które oferujemy"*/
 h3
 {
 	font-style: italic;
@@ -238,6 +261,7 @@ h3
 	font-weight: 400;
 }
 
+/*informacja o stronie*/
 p
 {
 	width: 55%;
@@ -246,25 +270,28 @@ p
 	text-align: justify;
 }
 
+/*pojemnik z iformacjami o organizatorach*/
 .prof
 {
-	width: 58%;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	width: 56.8%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+/*avatary organizatorów*/
 .flex1
 {
 	display: flex;
 	flex-flow: column nowrap;
-	width: 30%;
+	justify-content: center;
+	align-items: center;	
 }
 
+/*imie i nazwisko organizatorów*/
 .p1
 {
 	text-align: center;
@@ -283,12 +310,14 @@ p
 	font-size: 18px;
 }
 
+/*zdjęcia organizatorów*/
 .img1
 {
-	margin: 3.2%;
-	margin-top: 1.5%;
+	width: 90%;
+	height: 90%;
 }
 
+/*pojemnik z informacjami o wycieczkach*/
 .content
 {
 	width: 100%;
@@ -297,6 +326,7 @@ p
 	color: #fff;
 }
 
+/*informacja ilości dostępnych wycieczek w danych miesiącach*/
 table
 {
 	margin-left: auto;
@@ -320,6 +350,7 @@ mark
 	color: #ffffff;
 }
 
+/*ilość dostępnych wycieczek*/
 .circle
 {
 	float: right;
@@ -332,52 +363,31 @@ mark
 	background-color: black;
 }
 
+/*pozycjonowanie zdjęć*/
 .pictures
 {
 	display: flex;
+	flex-flow: row nowrap;
 	margin-top: 30px;
-	width: 55%;
+	margin-bottom: 58px;
+	width: 55vw;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	color: #000;
 }
 
-.picture1
-{
-	width: 255px;
-	height: auto;
-	background-color: #f1f1f1;
-}
-
+/*pojemniki z wycieczkami*/
 .picture
 {
-	width: 255px;
-	margin-left: 2%;
-	height: auto;
+	display: flex;
+	width: 33.33%;
+	flex-flow: column nowrap;
 	background-color: #f1f1f1;
+	margin: 5px;
 }
 
-h4
-{
-	padding-left: 15px;
-	margin-top: 15px;
-}
-
-h5
-{
-	padding-left: 15px;
-	font-weight: 400;
-	color: grey;
-	font-size: 16px;
-}
-
-#p4
-{
-	width: 88%;
-	margin-top: -10px;
-}
-
+/*zjęcia wycieczek*/
 .img2
 {
 	transition: all .2s ease-in-out;
@@ -388,11 +398,35 @@ h5
 	filter: brightness(65%);
 }
 
+/*nagłówek wycieczki*/
+h4
+{
+	padding-left: 15px;
+	margin-top: 15px;
+}
+
+/*data wycieczki*/
+h5
+{
+	padding-left: 15px;
+	font-weight: 400;
+	color: grey;
+	font-size: 16px;
+}
+
+/*informacja odnonie wycieczki*/
+#p4
+{
+	width: 88%;
+	margin-top: -10px;
+}
+
+/*przycisk "Kup teraz"*/
 button
 {
 	margin-left: 15px;
 	margin-bottom: 15px;
-	width: 40%;
+	width: 8em;
 	height: 40px;
 	background-color: #000;
 	border: 1px solid #000;
@@ -415,29 +449,43 @@ button:hover
 	flex-flow: row nowrap;
 }
 
+/*część związana z kontaktem*/
 .kontakt
 {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-	min-height: 450px;
-	padding-top: 64px;
-	padding-bottom: 64px;
-	padding-left: 20%; 
-	padding-right: 20%; 
+	height: 25em;
+	margin-top: 50px;
 	color: black;
 }
 
+/*nagłówek "KONTAKT"*/
 #h2
 {
 	margin-top: 0px;
 }
 
+/*kontener na dane i formularz*/
 .con
 {
 	width: 100%;
 	display: flex;
-	flex-flow: row nowrap;
 }
 
+/*pozycjonowanie lewej strony*/
+.position
+{
+	width: 50%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/*dane kontaktowe znajdujące się po lewej stronie*/
 .con1
 {
 	width: 50%;
@@ -445,39 +493,60 @@ button:hover
 	flex-flow: column nowrap;
 }
 
+/*pozycjonowanie danych*/
 .positionI
 {
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	width: 100%;
 	line-height: 200%;
 }
 
+/*pozycjonowanie prawejstrony*/
+.position2
+{
+	width: 50%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*formularz kontaktowy znajdujący się po prawej stronie*/
 .con2
 {
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 	width: 50%;
 }
 
+/*pozycjonowanie*/
 .positionInput
 {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 
+/*miejsce na wprowadzenie imienia, nazwiska i maila */
 input[type="name"], [type="email"]
 {
-	width: 50%;
+	width: 49.4%;
 	height: 35px;
 	padding: 5px;
-	margin: 2px;
 	border: 1px solid lightgrey;
 }
 
+/*miejsce na wprowadzenie wiadomośći*/
 input[type="text"]
 {
-	width: 99%;
+	width: 100%;
 	height: 35px;
 	padding: 5px;
 	margin-top: 10px !important;
@@ -490,24 +559,31 @@ input:focus
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
+/*pozycjonowanie przycisku "WYŚLIJ"*/
 .conButt
 {
-	width: 100%;
 	display: flex;
-	flex-flow: row nowrap;
 	justify-content: flex-end;
+	width: 50%;
+	margin-bottom: 50px;
 }
 
+/*przycisk "WYŚLIJ"*/
 #button1
 {
-	width: 15%;
-	font-size: 1.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 8em;
+	font-size: 1.4em;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
+/*stopka strony*/
 footer
 {
-	wdith: 100%;
+	width: 100%;
 	height: 250px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -515,26 +591,51 @@ footer
 	align-items: center;
 	color: #292929;
 }
+
+/*social media*/
 .social
 {
 	word-spacing: -10px;
 }
 
-.icon-facebook-squared{ transition: all .2s ease-in-out; opacity: 0.6;}
-.icon-snapchat{ transition: all .2s ease-in-out; opacity: 0.6;}
-.icon-pinterest{ transition: all .2s ease-in-out; opacity: 0.6;}
-.icon-instagram{ transition: all .2s ease-in-out; opacity: 0.6;}
-.icon-linkedin{ transition: all .2s ease-in-out; opacity: 0.6;}
-.icon-twitter{ transition: all .2s ease-in-out; opacity: 0.6;}
+.social .demo-icon
+{
+	transition: all .2s ease-in-out; 
+	opacity: 0.6;
+}
 
-.icon-facebook-squared:hover{ opacity: 1; }
-.icon-snapchat:hover{ opacity: 1; }
-.icon-pinterest:hover{ opacity: 1; }
-.icon-instagram:hover{ opacity: 1; }
-.icon-linkedin:hover{ opacity: 1; }
-.icon-twitter:hover{ opacity: 1; }
+.social .demo-icon:hover
+{
+	opacity: 1;
+}
 
-@media only screen and (max-width: 600px)
+@media screen and (max-width: 1800px)
+{
+	.mainImage
+	{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px)
+{
+	p
+	{
+		width: 87.2%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+	}
+	.prof { width: 90%; }
+	table { width: 87%; }
+	.pictures { width: 88%; }
+	.con1 { width: 85%; }
+	.con2 { width: 85%; }
+	.conButt { width: 85%; }
+}
+
+@media screen and (max-width: 800px)
 {
 	nav
 	{
@@ -543,7 +644,7 @@ footer
 		height: auto;
 	}
 
-	.dom
+	.home
 	{
 		width: 100%;
 		height: 40px;

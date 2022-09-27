@@ -1,10 +1,10 @@
-var number = Math.floor(Math.random()*3)+1;
+let number = Math.floor(Math.random()*3)+1;
 
 function setPicture()
 {
 	number++; if(number > 3) number=1;
 	
-	var picture = "<img src=\"img/"+number+".png\" width=\"100%\" max-height=\"750px\"/>";
+	let picture = "<img class='mainImage' src=\"img/"+number+".png\"'/>";
 	
 	document.getElementById("img").innerHTML = picture;
 	
