@@ -15,12 +15,12 @@
 <body>
 	<div class="container">
 		<nav>
-			<div class="search"><i class="demo-icon icon-search-1"></i></div>
+			<div class="search"><i class="demo-icon icon-search"></i></div>
 			<div class="home"><a href="#img">HOME</div></a>
 			<div class="zsp"><a href="#org">ORGANIZATORZY</div></a>
 			<div class="wyc"><a href="#co">WYCIECZKA</div></a>
-			<div class="kon"><a href="#h2">KONTAKT</div></a>
-			<span class="wie">WIĘCEJ &#8659;
+			<div class="kon"><a href="#kon">KONTAKT</div></a>
+			<span class="wie">WIĘCEJ <i class="demo-icon icon-down-outline"></i>
 				<ul>
 					<li>Towar</li>
 					<li>Dodatki</li>
@@ -29,119 +29,134 @@
 			</span>
 		</nav>
 		<div class="nav">
-			<div class="home">HOME</div>
+			<a href="#img"><span class="homeForMobile"><i class="demo-icon icon-home"></i></span></a>
 			<span class="menu"><i class="demo-icon icon-menu"></i></span>
+			<div class="hamburger">
+				<div class="mobile"><a href="#org">ORGANIZATORZY</div></a>
+				<div class="mobile"><a href="#wyc">WYCIECZKA</div></a>
+				<div class="mobile"><a href="#kon">KONTAKT</div></a>
+				<span class="mobileWiecej">WIĘCEJ <i class="demo-icon icon-down-outline"></i>
+					<ul class="ul">
+						<li class="li">Towar</li>
+						<li class="li">Dodatki</li>
+						<li class="li">Głoska bezdźwięczna</li>
+					<ul>
+			</div>>
 		</div>
-		<div id="img"></div>
-		<div class="org" id="org">
-			<h2>ORGANIZATORZY</h2>
-			<h3>Uwielbiamy miejsca, które oferujemy</h3>
-			<p>Stworzyłem fikcyjną stronę oferującą wycieczki. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<div class="prof">
-				<div class="flex1">
-					<div class="p1">Name</div>
-					<img class="img1" src="img/aw.jpg" alt="AccountPhoto"/>
-				</div>
-				<div class="flex1">
-					<div class="p2">Name</div>
-					<img class="img1"src="img/aw.jpg" alt="AccountPhoto"/>
-				</div>
-				<div class="flex1">
-					<div class="p3">Name</div>
-					<img class="img1"src="img/aw.jpg" alt="AccountPhoto"/>
-				</div>
-			</div>	
-		</div>
-		
-		<div class="content">
-			<h2>DATY WYCIECZKI</h2>
-			<h3>Pamiętaj o rezerwacji biletów!</h3>
-			<br/><br/>
-			<table>
-				<tr>
-					<td>Październik &nbsp;&nbsp;&nbsp;<mark>Wyprzedane</mark></td>
-				</tr>
-				<tr>
-					<td>Listopad &nbsp;&nbsp;&nbsp;<mark>Wyprzedane</mark></td>
-				</tr>
-				<tr>
-					<td>Grudzień <span class="circle">3</span></td>
-				</tr>
-			</table>
-			<div class="pictures"> 
-				<div class="picture" style="margin-right: 10px">
-					<img class="img2" src="img/ny.jpg" alt="New York" width="100%" height="200px"/>
-					<h4>New York</h4>
-					<h5>Fri 27 Nov 2016</h5>
-					<p id="p4">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-					<button>Kup bilet</button>
-				</div>
-				<div class="picture" style="margin-left: 10px; margin-right: 10px;">
-					<img class="img2" src="img/pr.jpg" alt="New York" width="100%" height="200px"/>
-					<h4>Paris</h4>
-					<h5>Sat 28 Nov 2016</h5>
-					<p id="p4">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-					<button>Kup bilet</button>
-				</div>
-				<div class="picture" style="margin-left: 10px;" >
-					<img class="img2" src="img/sf.jpg" alt="New York" width="100%" height="200px"/>
-					<h4>San Francisco</h4>
-					<h5>Sun 29 Nov 2016</h5>
-					<p id="p4">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-					<button>Kup bilet</button>
-				</div>
-			</div>
-		</div>
-		<div class="kontakt">
-			<h2 id="h2">KONTAKT</h2>
-			<h3>Zadzwoń lub napisz do nas!</h3>
-			<br/>
-			<div class="con">
-				<div class="position">
-					<div class="con1">
-						<div class="positionI">
-							<i class="demo-icon icon-location"></i>&nbsp;&nbsp;
-							Janków Zaleśny, Polska
-						</div>
-						<div class="positionI">
-							<i class="demo-icon icon-phone"></i>&nbsp;&nbsp;
-							882 670 786
-						</div>
-						<div class="positionI">
-							<i class="demo-icon icon-mail-alt"></i>&nbsp;&nbsp;
-							krystian11223@onet.pl
-						</div>
+		<div class="toDown" id="toDown">
+			<div id="img"></div>
+			<span id="org"></span>
+			<div class="org">
+				<h2>ORGANIZATORZY</h2>
+				<h3>Uwielbiamy miejsca, które oferujemy</h3>
+				<p>Stworzyłem fikcyjną stronę oferującą wycieczki. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="prof">
+					<div class="flex1">
+						<div class="p1">Name</div>
+						<img class="img1" src="img/aw.jpg" alt="AccountPhoto"/>
 					</div>
-				</div>
-				<div class="position2">
-					<div class="con2">
-						<div class="positionInput">
-							<input type="name" placeholder="Imię i nazwisko"></input><input type="email" placeholder="Email"></input>
-						</div>
-						<input type="text" placeholder="Wiadomość"></input>
+					<div class="flex1">
+						<div class="p2">Name</div>
+						<img class="img1"src="img/aw.jpg" alt="AccountPhoto"/>
+					</div>
+					<div class="flex1">
+						<div class="p3">Name</div>
+						<img class="img1"src="img/aw.jpg" alt="AccountPhoto"/>
+					</div>
+				</div>	
+			</div>
+			<span id="co"></span>
+			<div class="content" id="wyc">
+				<h2>DATY WYCIECZEK</h2>
+				<h3>Pamiętaj o rezerwacji biletów!</h3>
+				<br/><br/>
+				<table>
+					<tr>
+						<td>Październik &nbsp;&nbsp;&nbsp;<mark>Wyprzedane</mark></td>
+					</tr>
+					<tr>
+						<td>Listopad &nbsp;&nbsp;&nbsp;<mark>Wyprzedane</mark></td>
+					</tr>
+					<tr>
+						<td>Grudzień <span class="circle">3</span></td>
+					</tr>
+				</table>
+				<div class="pictures"> 
+					<div class="picture" style="margin-right: 10px">
+						<img class="img2" src="img/ny.jpg" alt="New York" width="100%" height="200px"/>
+						<h4>New York</h4>
+						<h5>Fri 27 Nov 2016</h5>
+						<p id="p4">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button>Kup bilet</button>
+					</div>
+					<div class="picture" style="margin-left: 10px; margin-right: 10px;">
+						<img class="img2" src="img/pr.jpg" alt="New York" width="100%" height="200px"/>
+						<h4>Paris</h4>
+						<h5>Sat 28 Nov 2016</h5>
+						<p id="p4">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button>Kup bilet</button>
+					</div>
+					<div class="picture" style="margin-left: 10px;" >
+						<img class="img2" src="img/sf.jpg" alt="New York" width="100%" height="200px"/>
+						<h4>San Francisco</h4>
+						<h5>Sun 29 Nov 2016</h5>
+						<p id="p4">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button>Kup bilet</button>
 					</div>
 				</div>
 			</div>
-			<br/>
-			<div class="conButt">
-				<button id="button1">Wyślij</button>
+			<span id="kon"></span>
+			<div class="kontakt">
+				<h2 id="h2">KONTAKT</h2>
+				<h3>Zadzwoń lub napisz do nas!</h3>
+				<br/>
+				<div class="con">
+					<div class="position">
+						<div class="con1">
+							<div class="positionI">
+								<i class="demo-icon icon-location"></i>&nbsp;&nbsp;
+								Janków Zaleśny, Polska
+							</div>
+							<div class="positionI">
+								<i class="demo-icon icon-phone"></i>&nbsp;&nbsp;
+								882 670 786
+							</div>
+							<div class="positionI">
+								<i class="demo-icon icon-mail-alt"></i>&nbsp;&nbsp;
+								krystian11223@onet.pl
+							</div>
+						</div>
+					</div>
+					<div class="position2">
+						<div class="con2">
+							<div class="positionInput">
+								<input type="name" placeholder="Imię i nazwisko"></input><input type="email" placeholder="Email"></input>
+							</div>
+							<input type="text" placeholder="Wiadomość"></input>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<div class="conButt">
+					<button id="button1">Wyślij</button>
+				</div>
 			</div>
-		</div>
-			
-		<img src="img/image.png" alt="ZdjęcieSatelita" width="100%"/>
+				
+			<img src="img/image.png" alt="ZdjęcieSatelita" width="100%"/>
 
-		<footer>
-			<div class="social">	
-				<i class="demo-icon icon-facebook-squared"></i>
-				<i class="demo-icon icon-instagram"></i>
-				<i class="demo-icon icon-snapchat"></i>
-				<i class="demo-icon icon-pinterest"></i>
-				<i class="demo-icon icon-twitter"></i>
-				<i class="demo-icon icon-linkedin"></i>
-			</div>
-			<br/>
-			&copy; 2021 created by Krystian Owczarek
-		</footer>
+			<footer>
+				<div class="social">	
+					<i class="demo-icon icon-facebook-squared"></i>
+					<i class="demo-icon icon-instagram"></i>
+					<i class="demo-icon icon-snapchat"></i>
+					<i class="demo-icon icon-pinterest"></i>
+					<i class="demo-icon icon-twitter"></i>
+					<i class="demo-icon icon-linkedin"></i>
+				</div>
+				<br/>
+				&copy; 2021 created by Krystian Owczarek
+			</footer>
+		</div>
 	</div>
 </body>
 </html>

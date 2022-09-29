@@ -1,9 +1,11 @@
 
-.icon-location:before { content: '\e800'; } /* '' */
-.icon-search-1:before { content: '\e801'; } /* '' */
-.icon-phone:before { content: '\e802'; } /* '' */
-.icon-menu:before { content: '\e803'; } /* '' */
+.icon-down-outline:before { content: '\e801'; } /* '' */
+.icon-search:before { content: '\e802'; } /* '' */
+.icon-home:before { content: '\e803'; } /* '' */
+.icon-location:before { content: '\e804'; } /* '' */
+.icon-phone:before { content: '\e805'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */

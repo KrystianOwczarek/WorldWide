@@ -7,21 +7,39 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
-      "css": "search-1",
-      "code": 59393,
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
       "src": "fontawesome"
+    },
+    {
+      "uid": "1d9b2bb0d0621cd616139c6a441ed442",
+      "css": "down-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 59395,
+      "src": "entypo"
     },
     {
       "uid": "0d08dbb1dd648a43bdea81b7e6c9e036",
       "css": "location",
-      "code": 59392,
+      "code": 59396,
       "src": "fontawesome"
     },
     {
       "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
       "css": "phone",
-      "code": 59394,
+      "code": 59397,
       "src": "fontawesome"
     },
     {
@@ -31,10 +49,10 @@
       "src": "fontawesome"
     },
     {
-      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
-      "css": "instagram",
-      "code": 61805,
-      "src": "fontawesome"
+      "uid": "47bd87a650e95b97f947d275ed968efe",
+      "css": "facebook-squared",
+      "code": 62222,
+      "src": "entypo"
     },
     {
       "uid": "cab8b1ea47d71c77413157c592db2293",
@@ -43,9 +61,9 @@
       "src": "fontawesome"
     },
     {
-      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
-      "css": "linkedin",
-      "code": 61665,
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
       "src": "fontawesome"
     },
     {
@@ -55,22 +73,16 @@
       "src": "fontawesome"
     },
     {
-      "uid": "47bd87a650e95b97f947d275ed968efe",
-      "css": "facebook-squared",
-      "code": 62222,
-      "src": "entypo"
-    },
-    {
-      "uid": "627abcdb627cb1789e009c08e2678ef9",
-      "css": "twitter",
-      "code": 61593,
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 61665,
       "src": "fontawesome"
     },
     {
-      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "uid": "559647a6f430b3aeadbecd67194451dd",
       "css": "menu",
-      "code": 59395,
-      "src": "entypo"
+      "code": 61641,
+      "src": "fontawesome"
     }
   ]
 }
